@@ -38,7 +38,6 @@ const Footer = () => {
         <span> | </span>
         <a href="#">Help</a>
       </div>
-      <p>© Domain Name. All Rights Reserved. Designed by HTML Codex</p>
     </footer>
   );
 };
