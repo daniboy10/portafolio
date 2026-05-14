@@ -27,7 +27,7 @@ const Skills = () => {
   }, []);
 
   const skills = [
-    { name: 'TYPESCRIPT', percentage: 70, color: '#0047ab' },
+    { name: 'TYPESCRIPT', percentage: 50, color: '#0047ab' },
     { name: 'React Native', percentage: 80, color: '#ffc107' },
     { name: 'PHP', percentage: 90, color: '#dc3545' },
     { name: 'Javascript', percentage: 90, color: '#dc3545' },
@@ -35,25 +35,31 @@ const Skills = () => {
     { name: 'Laravel', percentage: 70, color: '#0047ab' },
     { name: 'MySQLi', percentage: 85, color: '#00758f' },
     { name: 'CSS', percentage: 88, color: '#264de4' },
+    { name: 'PHP (Zend Framework)', percentage: 65, color: '#68b604' },
+    { name: 'Tailwind', percentage: 60, color: '#38bdf8' },
   ];
+
+  const mid = Math.ceil(skills.length / 2);
 
   return (
     <section className="skills" ref={skillsRef}>
       <h2 className="section-title">MY SKILLS</h2>
       <div className="skills-grid">
+
+        {/* Primera columna: índices 0 al 4 */}
         <div>
-          {skills.slice(0, 4).map((skill, index) => (
+          {skills.slice(0, mid).map((skill, index) => (
             <div className="skill" key={index}>
               <div className="skill-header">
                 <h4>{skill.name}</h4>
                 <span>{skill.percentage}%</span>
               </div>
               <div className="skill-bar">
-                <div 
-                  className="skill-progress" 
-                  style={{ 
+                <div
+                  className="skill-progress"
+                  style={{
                     width: isVisible ? `${skill.percentage}%` : '0%',
-                    background: skill.color 
+                    background: skill.color,
                   }}
                 ></div>
               </div>
@@ -61,25 +67,27 @@ const Skills = () => {
           ))}
         </div>
 
+        {/* Segunda columna: índices 5 al 9 */}
         <div>
-          {skills.slice(4, 8).map((skill, index) => (
+          {skills.slice(mid).map((skill, index) => (
             <div className="skill" key={index}>
               <div className="skill-header">
                 <h4>{skill.name}</h4>
                 <span>{skill.percentage}%</span>
               </div>
               <div className="skill-bar">
-                <div 
-                  className="skill-progress" 
-                  style={{ 
+                <div
+                  className="skill-progress"
+                  style={{
                     width: isVisible ? `${skill.percentage}%` : '0%',
-                    background: skill.color 
+                    background: skill.color,
                   }}
                 ></div>
               </div>
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );

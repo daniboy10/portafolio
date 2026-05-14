@@ -44,14 +44,29 @@ const Timeline = () => {
                     <h2>My Experience</h2>
 
                     <div className="timeline-item">
+                      <h3>Full Stack Specialist</h3>
+                        <h4>Interesse</h4>
+                        <span>| February 2026 – Present</span>
+                        <p>
+                            Full Stack development and maintenance of internal insurance platforms for Interesse, a company
+                            focused on providing clients with the best insurance policies and coverage options. Responsible
+                            for building and enhancing web applications, backend services, and database solutions that
+                            support partnerships with major brands such as Herbalife and GNP. Focused on delivering
+                            scalable, efficient, and innovative solutions to optimize business processes and improve the
+                            overall user experience.
+                        </p>
+                    </div>
+
+                    <div className="timeline-item">
                         <h3>Full Stack Developer</h3>
                         <h4>AC Logistics</h4>
-                        <span>| January 2024 – Present</span>
+                        <span>| January 2024 – January 2026</span>
                         <p>
-                            Full Stack development for internal logistics platforms, working on web
-                            applications, backend services, database management, and process
-                            optimization. Focused on building scalable solutions to support operational
-                            workflows and improve system efficiency.
+                            Full Stack development of custom software solutions for internal logistics operations and
+                            enterprise clients. Responsible for designing and maintaining web applications, backend
+                            services, and database systems to optimize operational workflows and improve efficiency.
+                            Delivered tailored technology solutions for recognized brands such as Nestlé, Cuidao con el
+                            Perro, and Panam, building scalable platforms adapted to each client's business needs.
                         </p>
                     </div>
 

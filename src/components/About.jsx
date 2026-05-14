@@ -22,7 +22,7 @@ const About = () => {
             <div className="info-item"><strong>Name:</strong> Daniel Monroy</div>
             <div className="info-item"><strong>Birthday:</strong> 10 Marzo 1994</div>
             <div className="info-item"><strong>Degree:</strong> Master</div>
-            <div className="info-item"><strong>Experience:</strong> 5 Years</div>
+            <div className="info-item"><strong>Experience:</strong> 6 Years</div>
             <div className="info-item"><strong>Phone:</strong> 5525219488</div>
             <div className="info-item"><strong>Email:</strong> monroydaniiel@gmail.com</div>
             <div className="info-item"><strong>Freelance:</strong> Available</div>
