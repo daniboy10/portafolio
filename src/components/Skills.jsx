@@ -28,11 +28,11 @@ const Skills = () => {
 
   const skills = [
     { name: 'TYPESCRIPT', percentage: 50, color: '#0047ab' },
-    { name: 'React Native', percentage: 80, color: '#ffc107' },
+    { name: 'React Native', percentage: 70, color: '#ffc107' },
     { name: 'PHP', percentage: 90, color: '#dc3545' },
     { name: 'Javascript', percentage: 90, color: '#dc3545' },
-    { name: 'React JS', percentage: 95, color: '#333' },
-    { name: 'Laravel', percentage: 70, color: '#0047ab' },
+    { name: 'React JS', percentage: 80, color: '#333' },
+    { name: 'Laravel', percentage: 80, color: '#0047ab' },
     { name: 'MySQLi', percentage: 85, color: '#00758f' },
     { name: 'CSS', percentage: 88, color: '#264de4' },
     { name: 'PHP (Zend Framework)', percentage: 65, color: '#68b604' },

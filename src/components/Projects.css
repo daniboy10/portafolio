@@ -1,0 +1,194 @@
+/* Ruta: src/components/Projects.css */
+
+/* ===========================
+   SECCIÓN PORTFOLIO / PROJECTS
+=========================== */
+.projects-section {
+    padding: 100px 20px;
+    background: white;
+    position: relative;
+  }
+  
+  .projects-section::before {
+    content: 'PORTFOLIO';
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 110px;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.025);
+    letter-spacing: 18px;
+    white-space: nowrap;
+    pointer-events: none;
+  }
+  
+  .projects-subtitle {
+    text-align: center;
+    color: #888;
+    font-size: 17px;
+    margin-top: -40px;
+    margin-bottom: 60px;
+    letter-spacing: 0.5px;
+  }
+  
+  /* ===========================
+     GRID DE TARJETAS
+  =========================== */
+  .projects-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+  }
+  
+  /* ===========================
+     TARJETA
+  =========================== */
+  .project-card {
+    border-radius: 14px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 40px rgba(0, 71, 171, 0.18);
+  }
+  
+  /* ===========================
+     IMAGEN CON OVERLAY
+  =========================== */
+  .project-image-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 210px;
+  }
+  
+  .project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    display: block;
+  }
+  
+  .project-card:hover .project-image {
+    transform: scale(1.08);
+  }
+  
+  .project-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 71, 171, 0.72);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+  }
+  
+  .project-card:hover .project-overlay {
+    opacity: 1;
+  }
+  
+  .project-cta {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transform: translateY(10px);
+    transition: transform 0.35s ease;
+  }
+  
+  .project-card:hover .project-cta {
+    transform: translateY(0);
+  }
+  
+  /* ===========================
+     INFO DE LA TARJETA
+  =========================== */
+  .project-info {
+    padding: 24px 26px 28px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  .project-category {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #0047ab;
+    margin-bottom: 10px;
+  }
+  
+  .project-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 12px;
+    line-height: 1.3;
+  }
+  
+  .project-description {
+    font-size: 14px;
+    color: #777;
+    line-height: 1.75;
+    flex: 1;
+    margin-bottom: 20px;
+  }
+  
+  /* ===========================
+     BOTÓN
+  =========================== */
+  .project-btn {
+    align-self: flex-start;
+    padding: 10px 26px;
+    background: transparent;
+    color: #0047ab;
+    border: 2px solid #0047ab;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .project-btn:hover {
+    background: #0047ab;
+    color: white;
+    transform: translateY(-2px);
+  }
+  
+  /* ===========================
+     RESPONSIVE
+  =========================== */
+  @media (max-width: 1024px) {
+    .projects-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .projects-grid {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+  
+    .projects-section::before {
+      font-size: 60px;
+      letter-spacing: 8px;
+    }
+  
+    .project-image-wrapper {
+      height: 180px;
+    }
+  }

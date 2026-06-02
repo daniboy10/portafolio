@@ -10,6 +10,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Modal from './components/Modal';
 import { portfolioData } from './data/portfolioData';
+import Projects from './components/Projects';
 import './App.css';
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
       <Skills />
       <Services />
       <Portfolio onBrandClick={handleBrandClick} />
+      <Projects onProjectClick={(project) => console.log(project)} />
       <Contact />
       <Footer />
       
